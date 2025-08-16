@@ -1,0 +1,18 @@
+In Doubly link list, just make another self referential structure
+
+
+
+struct Node {
+    int data;
+    struct Node* prev;
+    struct Node* next;
+
+};
+
+CREATING A NODE IN DOUBLY LINK list
+
+struct node* head = malloc(sizeof(struct node));
+head->prev = NULL;
+head->data = 10;
+head->next = NULL;
+
